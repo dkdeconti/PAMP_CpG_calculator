@@ -10,8 +10,9 @@ The program takes in a single sequence file, no header. It assumes a single cont
 ```
 usage: PAMP_CpG_calc.py [-h] SEQUENCE_FILE
 
-PAMP CpG calculator. For more details, see: Wright JF. Quantification of CpG Motifs in rAAV Genomes: Avoiding the
-Toll. Mol Ther. 2020;28(8):1756-1758. doi:10.1016/j.ymthe.2020.07.006
+PAMP CpG calculator. For more details, see: Wright JF. Quantification of CpG 
+Motifs in rAAV Genomes: Avoiding the Toll. Mol Ther. 2020;28(8):1756-1758. 
+doi:10.1016/j.ymthe.2020.07.006
 
 positional arguments:
   SEQUENCE_FILE  sequence of interest
