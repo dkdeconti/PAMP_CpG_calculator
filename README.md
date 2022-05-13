@@ -4,7 +4,13 @@ Identifies pathogen-associated molecular patterns specifically by CpG divergence
 
 ## GUI usage
 
-Paste the entire sequence into the input box. *Note: may require `ctrl-v` as right click may not work.*
+To open the program, you will still need to open via command line.
+
+```
+python PAMP_CpG_calc_GUI.py
+```
+
+Paste the entire sequence into the input box. *Note: may require `ctrl-v`, as right click may not work.*
 
 ![input example](./fig/example_usage-input.png)
 
