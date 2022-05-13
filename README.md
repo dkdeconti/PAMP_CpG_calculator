@@ -2,8 +2,17 @@
 
 Identifies pathogen-associated molecular patterns specifically by CpG divergence from the expected. This is an open source implementation of the work outlined by [Wright, JF (2020)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7403467/) for viruses/rAAV against hg38.
 
+## GUI usage
 
-## Usage
+Paste the entire sequence into the input box. *Note: may require `ctrl-v` as right click may not work.*
+
+![input example](./fig/example_usage-input.png)
+
+Then after pressing `Run`, the output will be displayed on a second window.
+
+![output example](./fig/example_usage-output.png)
+
+## Command line usage
 
 The program takes in a single sequence file, no header. It assumes a single contig. *The program does not expect a FASTA format file.*
 
