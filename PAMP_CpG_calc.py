@@ -45,6 +45,7 @@ def calculate_rf_values(seq):
     cpg_i4 = sum(seq.count(s) for s in i4)
     rf3 = ((cpg_t + cpg_s4 - (2 * cpg_i4)))/float(nt) * cpg_meneg * 100
     nrf3 = rf3 / float(rf3_hg)
+    print("CpG: %s" % str(cpg_t))
     print("RF1: %s" % str(round(rf1, 3)))
     print("RF2: %s" % str(round(rf2, 3)))
     print("RF3: %s" % str(round(rf3, 3)))

@@ -41,7 +41,7 @@ def calculate_rf_values(seq):
     cpg_i4 = sum(seq.count(s) for s in i4)
     rf3 = ((cpg_t + cpg_s4 - (2 * cpg_i4)))/float(nt) * cpg_meneg * 100
     nrf3 = rf3 / float(rf3_hg)
-    return (rf1, rf2, rf3, nrf3)
+    return (cpg_t, rf1, rf2, rf3, nrf3)
 
 
 def submit_clicked():
@@ -50,11 +50,13 @@ def submit_clicked():
             sequence.get().split('\n')
         ).lower()
     )
-    rf1, rf2, rf3, nrf3 = [
+    cpg_t, rf1, rf2, rf3, nrf3 = [
         str(round(f, 3))
         for f in results
     ]
-    msg = "RF1: %s\nRF2: %s\nRF3: %s\nNRF3: %s" % (rf1, rf2, rf3, nrf3)
+    msg = "CpG: %s\nRF1: %s\nRF2: %s\nRF3: %s\nNRF3: %s" % (
+        cpg_t, rf1, rf2, rf3, nrf3
+    )
     showinfo(
         title="Results",
         message=msg
